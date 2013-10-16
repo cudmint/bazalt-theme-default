@@ -8474,20 +8474,34 @@ body a.navbar-brand {
   font-size: 20px;
   font-weight: normal;
   text-transform: uppercase;
+  padding: 10px 15px;
 }
 body .navbar .nav li a {
   font-family: 'bebas_neue_cyrillicregular', Arial, Helvetica, sans-serif;
   font-size: 17px;
+  padding: 10px 15px;
+  color: #333;
 }
 body .navbar .nav li a.dropdown-toggle .caret {
-  border-bottom-color: #777777;
-  border-top-color: #777777;
+  border-bottom-color: #777;
+  border-top-color: #777;
   margin-top: 6px;
 }
 body .navbar .nav li a.dropdown-toggle:hover .caret,
 body .navbar .nav li a.dropdown-toggle:focus .caret {
   border-bottom-color: #333;
   border-top-color: #333;
+}
+body .navbar .nav li a:hover,
+body .navbar .nav li a:focus {
+  background-color: #757575;
+  color: #fff;
+  text-shadow: none;
+}
+body .navbar .nav li.open a {
+  background-color: #757575;
+  color: #fff;
+  text-shadow: none;
 }
 body .nav-tabs .open .dropdown-toggle,
 body .nav-pills .open .dropdown-toggle,
