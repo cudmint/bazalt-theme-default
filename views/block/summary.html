@@ -8,15 +8,14 @@
         <i class="icon-comment"></i> {{ page.comments_count }}
     </div>
 
-    <div class="date label label-primary pull-right"><i class="icon-calendar"></i> {{
-        page.created_at|date:'dd.MM.yyyy' }}
-    </div>
-
-
-
     <div class="block" ng-if="showMore">
         <a smooth-scroll data-target="top" ng-href="{{ page.url }}" title="{{page.title|language}}"
            class="read-more btn btn-xs btn-default"><i class="icon-hand-right"></i> Читать далее</a>
+    </div>
+
+
+    <div class="date label label-primary pull-right"><i class="icon-calendar"></i> {{
+        page.created_at|date:'dd.MM.yyyy' }}
     </div>
 
     <div class="block">
