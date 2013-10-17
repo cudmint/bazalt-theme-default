@@ -8640,20 +8640,23 @@ h3 a:focus {
 .table tfoot > tr > td {
   border: medium none;
 }
-.page-images li {
+.page-images li,
+.images li {
   display: inline-block;
   *display: inline;
   float: none;
   margin: 0 10px 20px;
   vertical-align: top;
 }
-.page-images li a.thumbnail {
+.page-images li a.thumbnail,
+.images li a.thumbnail {
   border-radius: 0 0 0 0;
   display: block;
   padding: 10px;
   position: relative;
 }
-.page-images li + li {
+.page-images li + li,
+.images li + li {
   margin-left: 10px;
 }
 .summary {
@@ -8661,6 +8664,9 @@ h3 a:focus {
 }
 .feed-item {
   margin-bottom: 20px;
+}
+.feed-item .body {
+  margin-bottom: 10px;
 }
 .sidebar {
   padding-top: 25px;
@@ -8770,6 +8776,36 @@ h3 a:focus {
   text-align: right;
 }
 /*b-news*/
+/*pagination */
+.pagination .btn-group {
+  border: 1px solid #DDDDDD;
+  border-radius: 4px 4px 4px 4px;
+  margin: 0;
+  padding: 0;
+}
+.pagination .btn-group .btn {
+  border: medium none;
+  color: #999999;
+  margin: 0;
+  outline: medium none;
+}
+.pagination .btn-group .btn.active {
+  color: #333333;
+}
+.pagination .btn-group .btn.active:hover,
+.pagination .btn-group .btn.active:focus {
+  color: #333;
+}
+.pagination .btn-group .btn:hover,
+.pagination .btn-group .btn:focus {
+  color: #777;
+}
+/*pagination */
+/*breadcrumb*/
+.breadcrumb {
+  background: #f2f2f2;
+}
+/*breadcrumb*/
 /*page*/
 .default .body h3 {
   margin: 15px 0 5px;
