@@ -8601,6 +8601,10 @@ h3 {
   margin: 0;
   padding: 0;
 }
+h2,
+.h2 {
+  font-size: 28px;
+}
 h1 {
   border-bottom: 1px solid #DDDDDD;
   padding: 0 0 5px 0;
@@ -8755,7 +8759,9 @@ h3 a:focus {
   margin-bottom: 20px;
 }
 .b-news .one-news {
+  border-bottom: 1px solid #DDDDDD;
   margin-bottom: 15px;
+  padding-bottom: 10px;
 }
 .b-news .one-news article {
   margin-bottom: 5px;
@@ -8764,3 +8770,8 @@ h3 a:focus {
   text-align: right;
 }
 /*b-news*/
+/*page*/
+.default .body h3 {
+  margin: 15px 0 5px;
+}
+/*page*/
