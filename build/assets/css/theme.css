@@ -8497,7 +8497,6 @@ body {
   text-decoration: underline;
 }
 #footer .bottom .design {
-  width: 130px;
   line-height: 12px;
   margin-bottom: 15px;
 }
@@ -8898,7 +8897,6 @@ h3 a:focus {
 }
 .main-part {
   background: url("../img/main-shaddow.png") repeat-x top;
-  height: 55px;
   padding-top: 20px;
 }
 .header .logo {
