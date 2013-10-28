@@ -88,9 +88,9 @@ module.exports = (grunt) ->
             development:
                 options:
                     port: 8000
-                    base: 'src'
+                    base: '.'
                     middleware: (connect, options) -> [
-                        urlRewrite 'src'
+                        urlRewrite '.'
                         connect.static options.base
                         connect.directory options.base
                     ]

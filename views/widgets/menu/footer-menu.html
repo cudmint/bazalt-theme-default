@@ -1,0 +1,13 @@
+<script type="text/ng-template" id="menu/item">
+    <a smooth-scroll data-target="top" ng-href="{{ item.url }}">
+        {{ item.title|language }}
+    </a>
+    <span ng-if="!$last" class="divider-right"></span>
+</script>
+
+<div>
+    <ul class="nav">
+        <li ng-repeat="item in menu.children" ng-controller="bcMenu.Controllers.MenuItem" ng-include="'menu/item'"></li>
+
+    </ul>
+</div>

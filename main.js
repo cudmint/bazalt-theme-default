@@ -2,14 +2,14 @@ requirejs.config({
     baseUrl: '/app',
     packages: [{
         name: 'bazalt',
-        location: '../bazalt/src/',
+        location: '../bazalt/',
         main: 'main'
     }, {
         name: 'modules',
-        location: '../bazalt/src/modules'
+        location: '../bazalt/modules'
     }, {
         name: 'components',
-        location: '../bazalt/src/components'
+        location: '../bazalt/components'
     }],
     paths: {
         'requirejs': '../bower_components/requirejs/require',

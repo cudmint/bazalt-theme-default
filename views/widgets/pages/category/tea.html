@@ -1,0 +1,11 @@
+<div>
+    <h2 class="tea-category-title">Категории чая</h2>
+    <div class="page-list">
+        <div class="page" ng-repeat="page in pagesList">
+            <a href="{{ page.url }}">
+                <img class="thumb" src="{{ page.images[0].url }}" alt="{{ page.images[0].name }}"  />
+                <h3>{{ page.title.en }}</h3>
+            </a>
+        </div>
+    </div>
+</div>
