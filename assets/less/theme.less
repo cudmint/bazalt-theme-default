@@ -4,7 +4,6 @@
 @import "loader";
 @import "comments";
 @import "../../bower_components/font-awesome/less/font-awesome";
-  //@import "../../bower_components/bootstrap-datepicker/css/datepicker.css";
 @import "jquery.fancybox.less";
 @import "galleria.classic.less";
 
@@ -34,6 +33,7 @@ html, body {
     li {
       float: left !important;
       a {
+        background: url("../img/footer_div.png") no-repeat center right transparent;
         display: block;
         color: #393939;
         line-height: 40px;
@@ -48,6 +48,11 @@ html, body {
         background: url("../img/div-footer-menu.png") no-repeat;
         height: 62px;
         width: 1px;
+      }
+      &:last-child {
+        a {
+          background: transparent;
+        }
       }
     }
   }
@@ -80,11 +85,16 @@ html, body {
   .bottom {
     padding: 20px 0;
     background: #e4ecdf;
+    font-family: Vardana,sans-serif;
     .footer-page {
       color: #4a8120;
+      font-size: 12px;
     }
     .copy {
       color: #393939;
+      font-size: 11px;
+      line-height: 14px;
+      padding-top: 10px;
       a {
         color: #437c21;
         text-decoration: underline;
@@ -98,34 +108,22 @@ html, body {
       }
     }
     .design {
+      font-size: 11px;
       line-height: 12px;
       margin-bottom: 15px;
+      color: #5A5A5A;
+      p {
+        margin: 0;
+      }
       a {
-        font-size: 11px;
-        color: #5a5a5a;
+        color: #9A0000;
         text-decoration: none;
-        position: relative;
-        .title {
-          color: #9a0000;
-          text-decoration: underline;
-        }
-        .logo {
+        .icon-disc {
           background: url("../img/disc-logo.png") no-repeat;
-          bottom: -10px;
-          display: block;
-          height: 22px;
-          position: absolute;
-          right: -53px;
+          display: inline-block;
+          height: 23px;
+          margin: -10px 0 0 5px;
           width: 23px;
-        }
-        .logo-mistinfo {
-          background: url("../img/mistinfo-logo.png") no-repeat;
-          bottom: -10px;
-          display: block;
-          height: 22px;
-          position: absolute;
-          right: -65px;
-          width: 63px;
         }
       }
     }
@@ -145,9 +143,9 @@ object, embed, a:hover, a:active, a:focus, a {
 
 body {
   margin: 0;
-  font-family: Georgia, sans-serif;
-  font-size: 13px;
-  line-height: 20px;
+  font-family: Arial,sans-serif;
+  font-size: 14px;
+  line-height: 18px;
   color: #333333;
   background: #fff;
   a {
@@ -171,8 +169,9 @@ body {
         float: left;
         a {
           font-size: 17px;
+          border: 1px solid transparent;
           color: #fff;
-          width: 196px;
+          height: 57px;
           margin-top: 2px;
           border-right: 1px solid #638f42;
           &:first-child {
@@ -182,8 +181,11 @@ body {
             margin-right: 2px;
           }
           &:hover, &:focus, &:active {
-            background: url("../img/bg-main-item.png") no-repeat;
-            color: #e3e410;
+            background: url("../img/bg-main-item.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+            border: 1px solid #8BAE75;
+            box-shadow: 0 -2px 5px rgba(255, 255, 255, 0.5) inset;
+            color: #E3E410;
+            height: 55px;
             text-shadow: none;
           }
         }
@@ -197,6 +199,14 @@ body {
               background-color: transparent;
               color: #e3e410;
               text-shadow: none;
+            }
+          }
+        }
+        &:last-child {
+          a {
+            border-right: none;
+            &:hover, &:focus, &:active {
+              border-right: 1px solid #8BAE75;
             }
           }
         }
@@ -227,15 +237,16 @@ h1, h2, h3 {
 }
 
 h2, .h2 {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 h1 {
-  font-size: 30px;
-  line-height: 55px;
-  display: block;
   color: #4A8120;
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 h3 {
@@ -282,6 +293,10 @@ h3 {
       margin-left: 10px;
     }
   }
+}
+
+article {
+  text-align: justify;
 }
 
 .summary {
@@ -341,6 +356,8 @@ h3 {
     padding-top: 10px;
     .page {
       display: inline-block;
+      margin-right: 15px;
+      text-align: center;
       width: 130px;
       a {
         text-decoration: none;
@@ -348,16 +365,16 @@ h3 {
           cursor: hand;
         }
         .thumb {
-          border: 1px solid #D0D3C1;
-          height: 115px;
-          margin: 0 5px 5px;
-          padding: 1px;
-          width: 115px;
+          border: 2px solid #D0D3C1;
+          height: 102px;
+          padding: 2px;
+          width: 102px;
         }
         h3 {
-          font-size: 14px;
-          color: #1c5c55;
+          color: #1C5C55;
+          font-size: 12px;
           font-weight: bold;
+          line-height: 16px;
           text-align: center;
         }
       }
@@ -408,7 +425,6 @@ h3 {
       text-decoration: none;
       padding: 5px 12px;
       margin-right: 5px;
-      font-family: Arial;
       font-weight: bold;
       &:hover, &:focus {
         background: #4a8120;
@@ -422,7 +438,6 @@ h3 {
       text-decoration: none;
       padding: 5px 12px;
       margin-right: 5px;
-      font-family: Arial;
       font-weight: bold;
       &:hover, &:focus {
         cursor: default;
@@ -502,17 +517,18 @@ h3 {
 
 /* MY CROP*/
 .container {
-  max-width: 1000px;
-  padding: 0;
+  width: 1000px;
+  padding: 0 15px;
 }
 
 .main-menu {
+  margin: 0 -15px;
   .nav {
     background: url("../img/bg-main.png") no-repeat;
     width: 100%;
     li {
       a {
-        padding: 19px 30px;
+        padding: 19px 54px;
         height: 59px;
         text-align: center;
       }
@@ -525,21 +541,19 @@ h3 {
   padding-top: 20px;
 }
 
-
 .header {
-  .logo {
-    background: url("../img/logo.png") no-repeat;
-    height: 186px;
-    a {
-      display: block;
-      height: 186px;
-    }
+  margin: 0 -15px;
+  .b-logo {
+    background: url("../img/logo.png") no-repeat top left transparent;
+    display: block;
+    height: 183px;
+    width: 314px;
   }
   .tea {
-    background: url("../img/tea.png") no-repeat right center;
-    height: 192px;
+    height: 190px;
     .social {
-      padding-top: 10px;
+      padding-left: 56px;
+      padding-top: 11px;
       a {
         display: block;
         background-image: url("../img/social.png");
@@ -563,13 +577,24 @@ h3 {
       }
     }
   }
+  .tea-bg {
+    background: url("../img/tea.png") no-repeat scroll right center transparent;
+    height: 192px;
+    position: absolute;
+    right: -28px;
+    top: -1px;
+    width: 454px;
+    z-index: -1;
+  }
 }
 
 .info-page {
-  background: #eef5e6;
-  padding: 20px;
-  font-size: 14px;
+  background: #EEF5E6;
   color: #595959;
+  font-family: verdana;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 20px;
   position: relative;
   z-index: 3;
 
@@ -599,4 +624,8 @@ h3 {
   background: url("../img/leaf.png") no-repeat;
   width: 187px;
   height: 154px;
+}
+
+img {
+  max-width: 100%;
 }
