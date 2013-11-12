@@ -8631,6 +8631,7 @@ body {
   float: left !important;
 }
 #footer .nav li a {
+  background: url("../img/footer_div.png") no-repeat center right transparent;
   display: block;
   color: #393939;
   line-height: 40px;
@@ -8647,6 +8648,9 @@ body {
   background: url("../img/div-footer-menu.png") no-repeat;
   height: 62px;
   width: 1px;
+}
+#footer .nav li:last-child a {
+  background: transparent;
 }
 #footer .add-info {
   text-align: center;
@@ -8677,12 +8681,17 @@ body {
 #footer .bottom {
   padding: 20px 0;
   background: #e4ecdf;
+  font-family: Vardana, sans-serif;
 }
 #footer .bottom .footer-page {
   color: #4a8120;
+  font-size: 12px;
 }
 #footer .bottom .copy {
   color: #393939;
+  font-size: 11px;
+  line-height: 14px;
+  padding-top: 10px;
 }
 #footer .bottom .copy a {
   color: #437c21;
@@ -8696,36 +8705,24 @@ body {
   text-decoration: underline;
 }
 #footer .bottom .design {
+  font-size: 11px;
   line-height: 12px;
   margin-bottom: 15px;
+  color: #5A5A5A;
+}
+#footer .bottom .design p {
+  margin: 0;
 }
 #footer .bottom .design a {
-  font-size: 11px;
-  color: #5a5a5a;
+  color: #9A0000;
   text-decoration: none;
-  position: relative;
 }
-#footer .bottom .design a .title {
-  color: #9a0000;
-  text-decoration: underline;
-}
-#footer .bottom .design a .logo {
+#footer .bottom .design a .icon-disc {
   background: url("../img/disc-logo.png") no-repeat;
-  bottom: -10px;
-  display: block;
-  height: 22px;
-  position: absolute;
-  right: -53px;
+  display: inline-block;
+  height: 23px;
+  margin: -10px 0 0 5px;
   width: 23px;
-}
-#footer .bottom .design a .logo-mistinfo {
-  background: url("../img/mistinfo-logo.png") no-repeat;
-  bottom: -10px;
-  display: block;
-  height: 22px;
-  position: absolute;
-  right: -65px;
-  width: 63px;
 }
 /* Wrapper for page content to push down footer */
 /*outline*/
@@ -8742,9 +8739,9 @@ a {
 }
 body {
   margin: 0;
-  font-family: Georgia, sans-serif;
-  font-size: 13px;
-  line-height: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
   color: #333333;
   background: #fff;
 }
@@ -8771,8 +8768,9 @@ body .navbar.main .nav li {
 }
 body .navbar.main .nav li a {
   font-size: 17px;
+  border: 1px solid transparent;
   color: #fff;
-  width: 196px;
+  height: 57px;
   margin-top: 2px;
   border-right: 1px solid #638f42;
 }
@@ -8785,8 +8783,11 @@ body .navbar.main .nav li a:last-child {
 body .navbar.main .nav li a:hover,
 body .navbar.main .nav li a:focus,
 body .navbar.main .nav li a:active {
-  background: url("../img/bg-main-item.png") no-repeat;
-  color: #e3e410;
+  background: url("../img/bg-main-item.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: 1px solid #8BAE75;
+  box-shadow: 0 -2px 5px rgba(255, 255, 255, 0.5) inset;
+  color: #E3E410;
+  height: 55px;
   text-shadow: none;
 }
 body .navbar.main .nav li.open a {
@@ -8799,6 +8800,14 @@ body .navbar.main .nav li.open a:focus {
   background-color: transparent;
   color: #e3e410;
   text-shadow: none;
+}
+body .navbar.main .nav li:last-child a {
+  border-right: none;
+}
+body .navbar.main .nav li:last-child a:hover,
+body .navbar.main .nav li:last-child a:focus,
+body .navbar.main .nav li:last-child a:active {
+  border-right: 1px solid #8BAE75;
 }
 .nav-tabs .open .dropdown-toggle,
 .nav-pills .open .dropdown-toggle,
@@ -8841,14 +8850,15 @@ h3 {
 }
 h2,
 .h2 {
-  font-size: 28px;
+  font-size: 24px;
 }
 h1 {
-  font-size: 30px;
-  line-height: 55px;
-  display: block;
   color: #4A8120;
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 h3 {
   color: #0088CC;
@@ -8892,6 +8902,9 @@ h3 a:focus {
 .page-images li + li,
 .images li + li {
   margin-left: 10px;
+}
+article {
+  text-align: justify;
 }
 .summary {
   margin-top: 10px;
@@ -8945,6 +8958,8 @@ h3 a:focus {
 }
 .sidebar .page-list .page {
   display: inline-block;
+  margin-right: 15px;
+  text-align: center;
   width: 130px;
 }
 .sidebar .page-list .page a {
@@ -8955,16 +8970,16 @@ h3 a:focus {
   cursor: hand;
 }
 .sidebar .page-list .page a .thumb {
-  border: 1px solid #D0D3C1;
-  height: 115px;
-  margin: 0 5px 5px;
-  padding: 1px;
-  width: 115px;
+  border: 2px solid #D0D3C1;
+  height: 102px;
+  padding: 2px;
+  width: 102px;
 }
 .sidebar .page-list .page a h3 {
-  font-size: 14px;
-  color: #1c5c55;
+  color: #1C5C55;
+  font-size: 12px;
   font-weight: bold;
+  line-height: 16px;
   text-align: center;
 }
 .main-container {
@@ -9007,7 +9022,6 @@ h3 a:focus {
   text-decoration: none;
   padding: 5px 12px;
   margin-right: 5px;
-  font-family: Arial;
   font-weight: bold;
 }
 .slider .slider-nav a:hover,
@@ -9022,7 +9036,6 @@ h3 a:focus {
   text-decoration: none;
   padding: 5px 12px;
   margin-right: 5px;
-  font-family: Arial;
   font-weight: bold;
 }
 .slider .slider-nav .true:hover,
@@ -9082,15 +9095,18 @@ h3 a:focus {
 /*page*/
 /* MY CROP*/
 .container {
-  max-width: 1000px;
-  padding: 0;
+  width: 1000px;
+  padding: 0 15px;
+}
+.main-menu {
+  margin: 0 -15px;
 }
 .main-menu .nav {
   background: url("../img/bg-main.png") no-repeat;
   width: 100%;
 }
 .main-menu .nav li a {
-  padding: 19px 30px;
+  padding: 19px 54px;
   height: 59px;
   text-align: center;
 }
@@ -9098,20 +9114,21 @@ h3 a:focus {
   background: url("../img/main-shaddow.png") repeat-x top;
   padding-top: 20px;
 }
-.header .logo {
-  background: url("../img/logo.png") no-repeat;
-  height: 186px;
+.header {
+  margin: 0 -15px;
 }
-.header .logo a {
+.header .b-logo {
+  background: url("../img/logo.png") no-repeat top left transparent;
   display: block;
-  height: 186px;
+  height: 183px;
+  width: 314px;
 }
 .header .tea {
-  background: url("../img/tea.png") no-repeat right center;
-  height: 192px;
+  height: 190px;
 }
 .header .tea .social {
-  padding-top: 10px;
+  padding-left: 56px;
+  padding-top: 11px;
 }
 .header .tea .social a {
   display: block;
@@ -9134,11 +9151,22 @@ h3 a:focus {
 .header .tea .social .tw {
   background-position: 0 -112px;
 }
+.header .tea-bg {
+  background: url("../img/tea.png") no-repeat scroll right center transparent;
+  height: 192px;
+  position: absolute;
+  right: -28px;
+  top: -1px;
+  width: 454px;
+  z-index: -1;
+}
 .info-page {
-  background: #eef5e6;
-  padding: 20px;
-  font-size: 14px;
+  background: #EEF5E6;
   color: #595959;
+  font-family: verdana;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 20px;
   position: relative;
   z-index: 3;
 }
@@ -9167,4 +9195,7 @@ h3 a:focus {
   background: url("../img/leaf.png") no-repeat;
   width: 187px;
   height: 154px;
+}
+img {
+  max-width: 100%;
 }
