@@ -357,9 +357,13 @@ article {
     padding-top: 10px;
     .page {
       display: inline-block;
+      *display: inline;
+      vertical-align: top;
       margin-right: 15px;
+      padding: 7px 0 0;
       text-align: center;
-      width: 130px;
+      width: 142px;
+      border: 2px solid transparent;
       a {
         text-decoration: none;
         &:hover h3, &:focus h3 {
@@ -368,6 +372,7 @@ article {
         .thumb {
           border: 2px solid #D0D3C1;
           height: 102px;
+          margin-bottom: 5px;
           padding: 2px;
           width: 102px;
         }
@@ -376,8 +381,21 @@ article {
           font-size: 12px;
           font-weight: bold;
           line-height: 16px;
+          padding: 2px 4px 5px;
           text-align: center;
         }
+      }
+      &:hover, &:focus {
+        background: #E4ECDA;
+        border: 2px solid #ebf0e2;
+        a {
+          h3 {
+            background:  url("../img/category.png") repeat-x top left transparent;
+          }
+        }
+      }
+      &:nth-child(2n+2) {
+        margin-right: 0;
       }
     }
   }
@@ -564,6 +582,8 @@ article {
         color: #26673e;
         font-size: 18px;
         span {
+          font-size: 17px;
+          font-weight: normal;
           margin-left: 60px;
         }
       }
