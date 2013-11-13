@@ -1,8 +1,25 @@
-<div bz-slider total="page.images.length + 2" class="slider widget">
-    <div class="slider expand" ng-show="index == n" data-ng-repeat="(n, image) in page.images">
-        <a href="{{ image.title }}"><img ng-src="{{ image.url }}" /></a>
+<div bz-slider total="page.images.length + 4" class="slider widget">
+
+    <div class="slider expand page" ng-show="index == n" ng-repeat="(n, page) in pagesList">
+
+        <div class="page default">
+            <div class="row">
+                <div ng-class="{ 'col-lg-8': page.images.0, 'col-lg-12': !page.images.0 }">
+                    <h3><a href="{{ page.url }}">{{ page.title.en }}</a></h3>
+                    <article>
+                        <div ng-bind-html="page.body.en"></div>
+                    </article>
+                </div>
+                <div ng-class="{ 'col-lg-4': page.images.0}">
+                    <img class="thumb" src="{{ page.images[0].url }}" alt="{{ page.images[0].name }}"  />
+                </div>
+            </div>
+        </div>
     </div>
+
     <div class="slider-nav">
-        <a class="{{index == n}}" data-ng-repeat="(n, image) in page.images" data-ng-click="setIndex({{n}})">{{n+1}}</a>
+        <div class="b-add">
+            <a ng-repeat="(n, page) in pagesList" data-ng-click="setIndex(n+1)">{{n+1}}</a>
+        </div>
     </div>
 </div>

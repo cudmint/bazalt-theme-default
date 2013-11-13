@@ -1,4 +1,5 @@
 <div class="photo widget">
+    <h2><a smooth-scroll data-target="top" ng-href="{{ page.url }}" class="poster">{{page.title|language}}</a></h2>
     <a smooth-scroll data-target="top" class="feed-title" ng-href="{{ page.url }}">
         <img ng-src="{{ page.images.0.url }}" />
     </a>
@@ -7,3 +8,4 @@
         <div ng-bind-html="page.body.en"></div>
     </div>
 </div>
+<hr />

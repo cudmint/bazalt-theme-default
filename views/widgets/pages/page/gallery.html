@@ -1,7 +1,5 @@
-<!--a smooth-scroll data-target="top" class="feed-title" ng-href="{{ page.url }}">
-    <img ng-src="{{ page.images.0.thumbnailUrl }}" />
-</a-->
 <div class="gallery widget">
+    <h2><a smooth-scroll data-target="top" ng-href="{{ page.url }}" class="poster">{{page.title|language}}</a></h2>
     <div class="body description description-gallery">
         <div ng-bind-html="page.body.en"></div>
     </div>
@@ -12,3 +10,4 @@
         </li>
     </ul>
 </div>
+<hr />

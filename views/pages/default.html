@@ -1,30 +1,14 @@
-<div class="row">
-    <div class="col col-md-8 content" bz-loading-container="loading">
-        <div class="page default">
-            <div class="row">
-                <div ng-class="{ 'col-lg-8': page.images.0, 'col-lg-12': !page.images.0 }">
-                    <h1>{{page.title|language}}</h1>
-                    <article>
-                        <div ng-bind-html="page.body.en"></div>
-                    </article>
-                </div>
-                <div ng-class="{ 'col-lg-4': page.images.0, 'col-lg-0': !page.images.0 }">
-                    <img class="first-img" ng-src="{{ page.images.0.url }}" alt="{{ page.title }}" />
-                </div>
-            </div>
 
-
-            <!--h1>{{page.title|language}}</h1>
-            <div>
-                <img class="first-img" ng-src="{{ page.images.0.url }}" alt="{{ page.title }}" />
+<div class="page default">
+    <div class="row">
+        <div ng-class="{ 'col-lg-8': page.images.0, 'col-lg-12': !page.images.0 }">
+            <h1>{{page.title|language}}</h1>
+            <article>
                 <div ng-bind-html="page.body.en"></div>
-                <div class="clearfix"></div>
-                <div bz-img="page.images" ng-if="!loop.first"></div>
-            </div-->
+            </article>
+        </div>
+        <div ng-class="{ 'col-lg-4': page.images.0}">
+            <img class="first-img" ng-src="{{ page.images.0.url }}" alt="{{ page.title }}" />
         </div>
     </div>
-    <div class="col col-md-4 sidebar">
-        <div bz-widget="'bcPages.Widgets.Category'" data-settings="{ 'category_id':20, templateUrl: '/views/widgets/pages/category/tea.html' }"></div>
-    </div>
-    <div class="clearfix"></div>
 </div>
