@@ -1,4 +1,16 @@
-<div class="main-feed category widget" bz-loading-container="loading" ng-init="showMore = true">
+<div class="main-feed category widget" bz-loading-container="loading" ng-init="showMore = true"
+     xmlns="http://www.w3.org/1999/html">
+
+    <div class="all-category">
+        <div class="one-category" data-ng-repeat="children in category.children">
+            <h3><a href="c-{{children.url}}">{{children.title|language}}</a></h3>
+            <article>
+                {{children.description|language}}
+            </article>
+            <hr />
+        </div>
+    </div>
+
     <table ng-table="tableParams" class="no-thead table">
         <tr ng-repeat="page in pagesList">
             <td>
