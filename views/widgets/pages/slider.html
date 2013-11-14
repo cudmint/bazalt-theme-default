@@ -1,4 +1,4 @@
-<div bz-slider total="page.images.length + 3" class="slider widget">
+<div bz-slider total="page.images.length + n" class="slider widget">
 
     <div class="slider expand page" ng-show="index == n" ng-repeat="(n, page) in pagesList">
 
@@ -19,7 +19,7 @@
 
     <div class="slider-nav">
         <div class="b-add">
-            <a ng-repeat="(n, page) in pagesList" data-ng-click="setIndex(n+1)">{{n+1}}</a>
+            <a ng-repeat="(n, page) in pagesList" data-ng-click="setIndex(n)">{{n+1}}</a>
         </div>
     </div>
 </div>
