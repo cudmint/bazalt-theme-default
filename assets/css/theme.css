@@ -8910,6 +8910,9 @@ h3 a:focus {
 article {
   text-align: justify;
 }
+article img {
+  margin: 5px;
+}
 .summary {
   margin-top: 10px;
 }
