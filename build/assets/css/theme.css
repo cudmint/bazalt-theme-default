@@ -9087,6 +9087,9 @@ article img {
 }
 /*b-news*/
 /*pagination */
+.pagination {
+  display: none;
+}
 .pagination .btn-group {
   border: 1px solid #DDDDDD;
   border-radius: 4px 4px 4px 4px;
@@ -9203,11 +9206,11 @@ article img {
 .plant {
   position: absolute;
   left: -155px;
-  bottom: -30px;
+  bottom: -90px;
   width: 236px;
   height: 168px;
   z-index: 1;
-  background: url("../img/plant.jpg") no-repeat;
+  background: url("../img/plant.png") no-repeat;
 }
 .delivery-conditions {
   bottom: -25px;
