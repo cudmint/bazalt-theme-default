@@ -8773,6 +8773,8 @@ body .navbar.main {
 }
 body .navbar.main .nav li {
   float: left;
+  margin-right: -2px;
+  padding-top: 0;
 }
 body .navbar.main .nav li a {
   font-size: 17px;
