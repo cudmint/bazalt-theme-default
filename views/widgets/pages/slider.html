@@ -1,6 +1,6 @@
-<div bz-slider total="page.images.length + n" class="slider widget">
+<div bz-slider="pagesList.length" delay="5000" autoplay="true" class="slider widget">
 
-    <div class="slider expand page" ng-show="index == n" ng-repeat="(n, page) in pagesList">
+    <div class="bz-slide slider expand page" ng-show="i == $slideIndex" ng-repeat="(i, page) in pagesList">
 
         <div class="page default">
             <div class="row">
@@ -16,10 +16,9 @@
             </div>
         </div>
     </div>
-
     <div class="slider-nav">
         <div class="b-add">
-            <a ng-repeat="(n, page) in pagesList" data-ng-click="setIndex(n)">{{n+1}}</a>
+            <a ng-repeat="(i, page) in pagesList" data-ng-click="setIndex(i)">{{i+1}}</a>
         </div>
     </div>
 </div>
